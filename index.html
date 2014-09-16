@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Silly</title>
+</head>
+<body>
+	<button id="silly">Do It Now</button>
+	<button id="clear">clear</button>
+	
+	<div id="result">hello</div>
+	<script src="jquery.js"></script>
+	<script src="silly.js"></script>
+
+	<script>
+		$(document).ready(function(){
+		$("#silly").click(function(){
+                     SILLY.DOIT($("#result"));
+		});
+		$("#clear").click(function(){
+                     $("#result").html(" ");
+		});
+		});	
+	</script>
+</body>
+</html>
